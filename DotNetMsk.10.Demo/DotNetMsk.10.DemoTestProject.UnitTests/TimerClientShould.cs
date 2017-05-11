@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using DotNetMsk._10.DemoTestProject.Tests.Shared;
 using HttpMock;
 using NUnit.Framework;
 
@@ -13,6 +15,9 @@ namespace DotNetMsk._10.DemoTestProject.UnitTests
         {
             _httpMock = HttpMockServer.LaunchTimeStub("http://localhost:10001/api/time");
         }
+
+        [Test, Severity(Severity.Blocker)]
+        public Task CalculateTimestampFromStartOfUnixEra() { throw new NotImplementedException(); }
 
         public void Dispose()
         {

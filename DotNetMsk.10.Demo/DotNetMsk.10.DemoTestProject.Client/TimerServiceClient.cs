@@ -3,14 +3,18 @@ using System.Threading.Tasks;
 
 namespace DotNetMsk._10.DemoTestProject.Client
 {
-    public class TimerClient : ITimerClient
+    public class TimerServiceClient : ITimerServiceClient
     {
+        #region private properties
+
         private readonly Uri _baseUrl;
         private const string GetTimePassedRoute = "get_time_passed";
 
-        public TimerClient(string baseUrl)
+        #endregion
+
+        public TimerServiceClient(string baseUrl)
         {
-            _baseUrl = new Uri(baseUrl);
+            throw new NotImplementedException();
         }
 
         public Task<TimeSpan> GetTimePassedTillDateAsync(DateTime dateTime)
