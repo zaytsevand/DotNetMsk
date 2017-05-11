@@ -61,5 +61,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetMsk.10.DemoTestProject.Tests.Shared\!DotNetMsk.10.DemoTestProject.Tests.Shared.csproj">
+      <Project>{D706B172-5F9E-4FD4-9898-C17C8154339A}</Project>
+      <Name>!DotNetMsk.10.DemoTestProject.Tests.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
